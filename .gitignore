@@ -1,0 +1,13 @@
+bbs/local.py
+
+*~
+*.pyc
+.DS_Store
+
+static/*
+!static/.gitkeep
+
+bbs/static/*
+!bbs/static/.gitkeep
+
+data/database
