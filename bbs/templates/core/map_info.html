@@ -1,0 +1,39 @@
+<div class="info-wrapper">
+    <div class="container">
+        <div class="responsive-video">
+            <iframe id="vimeo-iframe" src="//player.vimeo.com/video/65678345" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <h2>Worum geht es hier?</h2>
+            <p>
+                Bevor in Berlin gebaut werden kann, müssen dafür häufig erst die rechtlichen Grundlagen geschaffen werden. So kann es beispielsweise sein, dass bevor ein Haus gebaut werden darf, erst der entsprechende <strong>Bebauungsplan</strong> geändert werden muss. Im Rahmen eines solchen Bebauungsplanverfahren ist die Beteiligung der Bürger vorgesehen. Das heißt, dass die Pläne vier Wochen öffentlich ausgelegt werden müssen und die Bürger sich daran beteiligen können.
+            </p>
+            <p>
+                Die Marker auf der Karte stehen für Orte, an denen ein Bauvorhaben geplant ist und zu dem gerade die Planungsunterlagen  ausliegen und Beteiligung möglich ist. Sobald die die Beteiligungsfrist abgelaufen ist, verschwinden die Marker von der Karte. Die angezeigten Informationen stammen alle aus dem wöchentlich erscheinendem Amtsblatt von Berlin, das wir mit Unterstützung der Naturschutzverbände manuell auswerten.
+            </p>
+            <h2>Welche Daten werden auf der Karte angezeigt?</h2>
+            <p>
+            Die Marker auf der Karte stehen für&nbsp;Orte, an denen ein Bauvorhaben geplant ist und zu dem gerade die Planungsunterlagen ausliegen&nbsp;oder die gerade in der BVV (<a href="http://de.wikipedia.org/wiki/Bezirksverordnetenversammlung" target="_blank">Bezirksverordnetenversammlung</a>) verhandelt werden. Sobald die die Beteiligungsfrist abgelaufen ist oder der Ort (Bebauungsplan) in der BVV verhandelt wurde, verschwinden die Marker von der Karte. Die angezeigten Informationen stammen aus drei verschiedenen Quellen:
+            </p>
+            <ol>
+                <li>Mit Unterstützung der Naturschutzverbände werten wir das wöchentlich erscheinende <strong>Amtsblatt von Berlin</strong> manuell aus.</li>
+                <li>Wir schauen regelmäßig in den <strong>Ratsinformationssystemen der Bezirke</strong>, ob Bebauungspläne in den BVVs verhandelt wurde. Der Code dazu befindet sich <a href="https://github.com/BuergerbautStadt/bvvscrape" target="_blank">hier</a>. Wie gut das funktioniert, testen wir derzeit noch.</li>
+                <li>Die Geodaten zu den einzelnen Bebauungsplänen beziehen wir aus einem <strong><a href="http://fbinter.stadt-berlin.de/fb/berlin/service.jsp?id=bplan@senstadt&amp;type=WMS" target="_blank">offenen Datensatz der Senatsverwaltung der Stadtentwicklung von Berlin</a>.&nbsp;</strong></li>
+            </ol>
+            <p>
+                Eine Liste aller &nbsp;Daten aus dem Datensatz der &nbsp;Senatsverwaltung für Stadtentwicklung ist <a href="http://buergerbautstadt.de/orte/">hier</a> zu finden. Über Details sind – sofern vorhanden – Informationen aus Amtsblatt und BVV zu finden. Neben der Karten -und Listenansicht ist es auch möglich,&nbsp;die Informationen zu&nbsp;<a href="http://buergerbautstadt.de/news/abonnieren/">abonnieren</a>&nbsp;- das heißt Interessierte können ihre Email-Adresse für bestimmte Bezirke angeben und erhalten automatisch eine Email, wenn etwas neues ausliegt.
+            </p>
+        </div>
+        <div class="col-md-3">
+            <div class="sep60"></div>
+            <a href="" class="link" ng-click="showMap()">
+                Zurück zur Karte
+            </a>
+        </div>
+    </div>
+</div>
