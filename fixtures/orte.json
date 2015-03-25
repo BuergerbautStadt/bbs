@@ -9,8 +9,8 @@
             "bezirke": [7],
             "created": "2013-06-11T20:00:00Z",
             "updated": "2013-06-11T20:00:00Z"
-        }, 
-        "model": "projects.ort", 
+        },
+        "model": "projects.ort",
         "pk": 1
     }
 ]
