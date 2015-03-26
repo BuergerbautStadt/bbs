@@ -20,7 +20,7 @@ INSTALLED_APPS = (
     # we build city apps
     'wbc.core',
     'wbc.region',
-    'wbc.projects',
+    'wbc.process',
     'wbc.news',
     'wbc.comments'
 )

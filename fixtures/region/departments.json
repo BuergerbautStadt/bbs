@@ -7,7 +7,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 2
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 1
     },
     {
@@ -18,7 +18,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 3
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 2
     },
     {
@@ -29,7 +29,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 4
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 3
     },
     {
@@ -40,7 +40,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 5
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 4
     },
     {
@@ -51,7 +51,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 6
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 5
     },
     {
@@ -62,7 +62,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 7
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 6
     },
     {
@@ -73,7 +73,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 8
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 7
     },
     {
@@ -84,7 +84,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 9
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 8
     },
     {
@@ -95,7 +95,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 10
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 9
     },
     {
@@ -106,7 +106,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 11
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 10
     },
     {
@@ -117,7 +117,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 12
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 11
     },
     {
@@ -128,7 +128,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 13
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 12
     },
     {
@@ -139,7 +139,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 1
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 13
     },
     {
@@ -150,7 +150,7 @@
             "updated": "2013-06-11T20:00:00Z",
             "entity": 1
         },
-        "model": "region.office",
+        "model": "region.department",
         "pk": 14
     }
 ]
