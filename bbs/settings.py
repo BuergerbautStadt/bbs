@@ -70,3 +70,7 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 )
 
 LOGIN_URL = '/login'
+
+NEWS_SUBJECT_SUBSCRIBE   = '[Bürger baut Stadt] Newsletter abonnieren'
+NEWS_SUBJECT_UNSUBSCRIBE = '[Bürger baut Stadt] Newsletter abbestellen'
+NEWS_SUBJECT_NEWSLETTER  = '[Bürger baut Stadt] Neue Veröffentlichungen'
