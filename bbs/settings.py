@@ -19,6 +19,7 @@ INSTALLED_APPS = (
     'markdown',
     # we build city apps
     'wbc.core',
+    'wbc.region',
     'wbc.projects',
     'wbc.news',
     'wbc.comments'

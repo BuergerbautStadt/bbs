@@ -4,9 +4,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-mitte/org/stadtplanung/bauleitplanung.html",
             "name": "Bezirksamt Mitte",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 2
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 1
     },
     {
@@ -14,9 +15,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/stadtplanung/beteiligung.html",
             "name": "Bezirksamt Friedrichshain-Kreuzberg",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 3
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 2
     },
     {
@@ -24,9 +26,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-pankow/verwaltung/stadt/bekannt.html",
             "name": "Bezirksamt Pankow",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 4
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 3
     },
     {
@@ -34,9 +37,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-charlottenburg-wilmersdorf/org/stadtplanung/bebauungsplan/index.html",
             "name": "Bezirksamt Charlottenburg-Wilmersdorf",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 5
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 4
     },
     {
@@ -44,9 +48,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-spandau/verwaltung/abt/bpu/stadtplanung/bauleitplanung.html",
             "name": "Bezirksamt Spandau",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 6
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 5
     },
     {
@@ -54,9 +59,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/stadtplanung/beteiligungsverfahren.php",
             "name": "Bezirksamt Steglitz-Zehlendorf",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 7
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 6
     },
     {
@@ -64,9 +70,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-tempelhof-schoeneberg/organisationseinheit/planen/bebauungsplaene.html",
             "name": "Bezirksamt Tempelhof-Sch\u00f6neberg",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 8
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 7
     },
     {
@@ -74,9 +81,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-neukoelln/verwaltung/bebauungsplaene/bplan.html",
             "name": "Bezirksamt Neuk\u00f6lln",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 9
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 8
     },
     {
@@ -84,9 +92,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtentwicklung/aktuelleinformationenausdemstadtentwicklungsamt.php",
             "name": "Bezirksamt Treptow-K\u00f6penick",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 10
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 9
     },
     {
@@ -94,9 +103,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-marzahn-hellersdorf/verwaltung/bauen/beteiligungderoeffent.html",
             "name": "Bezirksamt Mahrzahn-Hellersdorf",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 11
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 10
     },
     {
@@ -104,9 +114,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-lichtenberg/buergerservice/bauen/bauen022.html",
             "name": "Bezirksamt Lichtenberg",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 12
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 11
     },
     {
@@ -114,9 +125,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.berlin.de/ba-reinickendorf/org/stadtplanung/index.html",
             "name": "Bezirksamt Reinickendorf",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 13
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 12
     },
     {
@@ -124,9 +136,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/plaene.shtml",
             "name": "Senatsverwaltung f\u00fcr Stadtentwicklung von Berlin",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 1
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 13
     },
     {
@@ -134,9 +147,10 @@
             "created": "2013-06-11T20:00:00Z",
             "link": "http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/",
             "name": "Senatsverwaltung f\u00fcr Stadtentwicklung von Berlin (PFV)",
-            "updated": "2013-06-11T20:00:00Z"
+            "updated": "2013-06-11T20:00:00Z",
+            "entity": 1
         },
-        "model": "projects.behoerde",
+        "model": "region.office",
         "pk": 14
     }
 ]

@@ -1,0 +1,20 @@
+[
+    {
+        "fields": {
+            "created": "2015-01-01T00:00:00Z",
+            "description": "",
+            "lat": null,
+            "lon": null,
+            "name": "Berlin",
+            "polygon": "",
+            "updated": "2015-01-01T00:00:00Z"
+        },
+        "model": "region.entity",
+        "pk": 1
+    },
+    {
+        "fields": {},
+        "model": "region.muncipality",
+        "pk": 1
+    }
+]

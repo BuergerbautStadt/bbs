@@ -1,12 +1,12 @@
 [
     {
         "fields": {
-            "created": "2013-06-11T20:00:00Z",
+            "created": "2015-01-11T20:00:00Z",
             "name": "Mitte",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 1
+        "model": "region.entity",
+        "pk": 2
     },
     {
         "fields": {
@@ -14,8 +14,8 @@
             "name": "Friedrichshain-Kreuzberg",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 2
+        "model": "region.entity",
+        "pk": 3
     },
     {
         "fields": {
@@ -23,8 +23,8 @@
             "name": "Pankow",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 3
+        "model": "region.entity",
+        "pk": 4
     },
     {
         "fields": {
@@ -32,8 +32,8 @@
             "name": "Charlottenburg-Wilmersdorf",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 4
+        "model": "region.entity",
+        "pk": 5
     },
     {
         "fields": {
@@ -41,8 +41,8 @@
             "name": "Spandau",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 5
+        "model": "region.entity",
+        "pk": 6
     },
     {
         "fields": {
@@ -50,8 +50,8 @@
             "name": "Steglitz-Zehlendorf",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 6
+        "model": "region.entity",
+        "pk": 7
     },
     {
         "fields": {
@@ -59,8 +59,8 @@
             "name": "Tempelhof-Sch\u00f6neberg",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 7
+        "model": "region.entity",
+        "pk": 8
     },
     {
         "fields": {
@@ -68,8 +68,8 @@
             "name": "Neuk\u00f6lln",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 8
+        "model": "region.entity",
+        "pk": 9
     },
     {
         "fields": {
@@ -77,8 +77,8 @@
             "name": "Treptow-K\u00f6penick",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 9
+        "model": "region.entity",
+        "pk": 10
     },
     {
         "fields": {
@@ -86,8 +86,8 @@
             "name": "Marzahn- Hellersdorf",
             "updated": "2013-06-24T18:55:26Z"
         },
-        "model": "projects.bezirk",
-        "pk": 10
+        "model": "region.entity",
+        "pk": 11
     },
     {
         "fields": {
@@ -95,8 +95,8 @@
             "name": "Lichtenberg",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
-        "pk": 11
+        "model": "region.entity",
+        "pk": 12
     },
     {
         "fields": {
@@ -104,7 +104,67 @@
             "name": "Reinickendorf",
             "updated": "2013-06-11T20:00:00Z"
         },
-        "model": "projects.bezirk",
+        "model": "region.entity",
+        "pk": 13
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 2
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 3
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 4
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 5
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 6
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 7
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 8
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 9
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 10
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 11
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
         "pk": 12
+    },
+    {
+        "fields": {"muncipality": 1},
+        "model": "region.district",
+        "pk": 13
     }
 ]
