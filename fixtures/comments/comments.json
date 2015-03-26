@@ -1,7 +1,7 @@
 [
     {
         "fields": {
-            "ort": 1,
+            "place": 1,
             "author_name": "Tanja Testuser",
             "author_email": "tanja@testuser.de",
             "author_url": "http://tanja.testuser.de",
@@ -10,12 +10,12 @@
             "enabled": true,
             "content":"Ein toller Kommentar!"
         },
-        "model": "comments.Kommentar",
+        "model": "comments.comment",
         "pk": 1
     },
     {
         "fields": {
-            "ort": 1,
+            "place": 1,
             "author_name": "Tarek Testuser",
             "author_email": "tarek@testuser.de",
             "author_url": "http://tarek.testuser.de",
@@ -24,7 +24,7 @@
             "enabled": true,
             "content":"Und noch ein toller Kommentar!"
          },
-        "model": "comments.Kommentar",
+        "model": "comments.comment",
         "pk": 2
     }
 ]
