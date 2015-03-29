@@ -39,7 +39,7 @@ WSGI_APPLICATION = 'bbs.wsgi.application'
 SITE_ID = 1
 
 LANGUAGE_CODE = 'de-de'
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Berlin'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
@@ -70,7 +70,3 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 )
 
 LOGIN_URL = '/login'
-
-NEWS_SUBJECT_SUBSCRIBE   = '[Bürger baut Stadt] Newsletter abonnieren'
-NEWS_SUBJECT_UNSUBSCRIBE = '[Bürger baut Stadt] Newsletter abbestellen'
-NEWS_SUBJECT_NEWSLETTER  = '[Bürger baut Stadt] Neue Veröffentlichungen'

@@ -1,0 +1,23 @@
+[Bürger baut Stadt] Neue Veröffentlichungen
+
+---
+
+Hallo,
+
+zu Bauvorhaben in den von Dir angegebenen Bezirken gibt es neue Veröffentlichungen:
+
+{% for publication in publications %}
+    Verfahren:          {{publication.process_step.process_type.name}}
+    Verfahrensschritt:  {{publication.process_step.name}}
+    Betrifft:           {{publication.place.identifier}}
+    {% if publication.place.description %}Gegend:             {{publication.place.description}}{% endif %}
+    Bezirk:             {{publication.place.entities.all|join:", "}}
+    Link zum Projekt:   {{place_link}}{{publication.place.pk}}
+    {% if publication.begin == publication.end  %}Zeitpunkt:          {{ publication.end }}{% else %}
+    Auslegungszeitraum: von {{ publication.begin}} bis {{ publication.end }}
+    {% endif %}
+{% endfor %}
+
+--
+Dies ist ein Newsletter von Bürger baut Stadt.
+Du kannst den Newsletter unter {{unsubscribe_link}} wieder abbestellen.
