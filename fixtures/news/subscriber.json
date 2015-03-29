@@ -1,0 +1,26 @@
+[
+    {
+        "fields": {
+            "created": "2013-06-11T20:00:00Z",
+            "email": "tanja@testuser.de",
+            "entities": [
+                2
+            ],
+            "updated": "2013-06-11T20:00:00Z"
+        },
+        "model": "news.subscriber",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "created": "2013-06-11T20:00:00Z",
+            "email": "tarek@testuser.de",
+            "entities": [
+                3
+            ],
+            "updated": "2013-06-11T20:00:00Z"
+        },
+        "model": "news.subscriber",
+        "pk": 2
+    }
+]
