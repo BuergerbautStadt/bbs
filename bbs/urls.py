@@ -2,7 +2,7 @@ from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView,RedirectView
 from django.contrib import admin
 
-# from wbc.core.views import VeroeffentlichungenFeed
+from wbc.process.views import PublicationFeed
 
 admin.autodiscover()
 
@@ -18,11 +18,9 @@ urlpatterns = patterns('',
     # veroeffentlichungen neu
     url(r'^veroeffentlichungen/neu/$', 'wbc.process.views.create_publication'),
 
-    # veroeffentlichungen
-    # url(r'^veroeffentlichungen/feed/$', VeroeffentlichungenFeed(), name="feedsurl"),
-
     # feeds
-    # url(r'^feeds/$', 'wbc.core.views.feeds'),
+    url(r'^feeds/$', 'wbc.core.views.feeds'),
+    url(r'^veroeffentlichungen/feed/$', PublicationFeed(), name="publication_feed_url"),
 
     # news module
     url(r'^news/abonnieren/$', 'wbc.news.views.subscribe'),

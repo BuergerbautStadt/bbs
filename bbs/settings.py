@@ -70,3 +70,6 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 )
 
 LOGIN_URL = '/login'
+
+FEED_TITLE = "Bürger baut Stadt (Veröffentlichungen)"
+FEED_DESCRIPTION = "Veröffentlichungen zu Bauvorhaben in Berlin"
