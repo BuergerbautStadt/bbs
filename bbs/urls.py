@@ -15,16 +15,14 @@ urlpatterns = patterns('',
     url(r'^orte/$', RedirectView.as_view(url='/liste/', permanent=True)),
     url(r'^orte/(?P<pk>\d+)/$', 'wbc.process.views.place'),
 
-    # url(r'^orte/(?P<pk>\d+)/$', 'wbc.core.views.ort'),
-    # url(r'^orte/neu/$', 'bbs.views.ort'),
+    # veroeffentlichungen neu
+    url(r'^veroeffentlichungen/neu/$', 'wbc.process.views.create_publication'),
+
     # veroeffentlichungen
-    # url(r'^veroeffentlichungen/neu/$', 'wbc.core.views.create_veroeffentlichung'),
     # url(r'^veroeffentlichungen/feed/$', VeroeffentlichungenFeed(), name="feedsurl"),
-    # begriffe
-    # url(r'^begriffe/$', 'wbc.core.views.begriffe'),
+
     # feeds
     # url(r'^feeds/$', 'wbc.core.views.feeds'),
-    # modules
 
     # news module
     url(r'^news/abonnieren/$', 'wbc.news.views.subscribe'),
