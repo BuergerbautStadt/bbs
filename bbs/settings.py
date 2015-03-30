@@ -14,6 +14,7 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     # other dependencies
     'rest_framework',
+    'rest_framework_gis',
     'widget_tweaks',
     'south',
     'markdown',
