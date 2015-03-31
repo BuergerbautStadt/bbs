@@ -74,3 +74,18 @@ LOGIN_URL = '/login'
 
 FEED_TITLE = "Bürger baut Stadt (Veröffentlichungen)"
 FEED_DESCRIPTION = "Veröffentlichungen zu Bauvorhaben in Berlin"
+
+TILES_URL = 'http://tiles.codefor.de/bbs-berlin/'
+TILES_OPT = {
+    'attribution': 'Map data &copy; 2012 OpenStreetMap contributors',
+    'maxZoom': 17,
+    'minZoom': 10,
+    'zIndex': 0,
+    'reuseTiles': 1
+}
+
+DEFAULT_VIEW = {
+    'lat': 52.51,
+    'lon': 13.37628,
+    'zoom': 11
+}
