@@ -27,7 +27,7 @@ urlpatterns = patterns('',
     url(r'^news/abbestellen/(?P<email>.*)$', 'wbc.news.views.unsubscribe'),
     url(r'^news/validieren/(?P<code>.*)$', 'wbc.news.views.validate'),
 
-    # region and process modules, urls by djangorestframework
+    # region and process modules, urls by djangorestframework, do not change
     url(r'^region/', include('wbc.region.urls')),
     url(r'^process/', include('wbc.process.urls')),
 

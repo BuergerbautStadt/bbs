@@ -1,6 +1,7 @@
 [
     {
         "fields": {
+            "active": true,
             "address": "Tempelhofer Ufer 23",
             "description": "Tempelhofer Ufer 23-24",
             "lat": 52.497388,
