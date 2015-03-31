@@ -34,6 +34,7 @@ DATABASES = {
     # }
 }
 
+SITE_TITLE = 'Bürger baut Stadt'
 SITE_ROOT = os.path.dirname(os.path.dirname(__file__))
 SITE_URL = 'http://localhost:8000'
 
