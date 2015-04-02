@@ -9,7 +9,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='core/map.html')),
     url(r'^begriffe/$', 'wbc.process.views.process'),
-    url(r'^liste/$', TemplateView.as_view(template_name='process/places.html')),
+    url(r'^liste/$', TemplateView.as_view(template_name='process/list.html')),
 
     # orte
     url(r'^orte/$', RedirectView.as_view(url='/liste/', permanent=True)),
