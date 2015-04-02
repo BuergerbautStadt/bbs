@@ -11,3 +11,4 @@ bbs/static/*
 !bbs/static/.gitkeep
 
 data/database
+env
