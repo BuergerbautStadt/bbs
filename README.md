@@ -13,7 +13,7 @@ BuergerbautStadt
 6. Install the dependencies using pip `pip install -r /path/to/bbs/requirements.txt`. You might want to use a [virtualenv][virtualenv] for this.
 7. Change to the `bbs` directory and execute `python maname.py migrate`. Give an admin username and a password when asked.
 8. Start the development server using `python maname.py runserver`.
-10. Use `python maname.py load-fixtures` to load the administrative information about berlin in the database.
+10. Use `python maname.py load-fixtures` to load the administrative information about Berlin into the database.
 11. Open a browser and go to [http://localhost:8000/][bbs-home]. A map of berlin should appear.
 12. Use [http://localhost:8000/admin/][bbs-admin] to log in. Under *region* and *process*, districts, departmentsplaces and publications can be added or edited.
 
