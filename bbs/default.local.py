@@ -1,5 +1,6 @@
 # coding=utf8
-import os
+import os,sys
+sys.path.append('/path/to/wbc/lib')
 
 DEBUG = True
 
