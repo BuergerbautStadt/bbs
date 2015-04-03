@@ -3,19 +3,24 @@ BuergerbautStadt
 
 [http://buergerbautstadt.de][bbs] - Finde geplante Bauvorhaben in deinem Kiez.
 
-## Starthilfe
+## Setup
 
-1. Python und [Django installieren][django-install].
-2. Repository in einem beliebigen Ordner clonen.
-3. Gehe in `euer/pfad/bbs/bbs` und kopiere die Datei `default.local.py` in den gleichen Ordner und nenne die Kopie `local.py`.
-4. Öffne `local.py` in einem Texteditor und ändert die Werte für den Datenbankadapter.
-5. Eine Konsole öffnen und per `cd euer/pfad/bbs` in den Ordner `bbs` wechseln,in dem die `manage.py` liegt.
-6. In der Konsole `python manage.py syncdb` ausführen und *User* + *Passwort* angeben. In der Konsole `python manage.py runserver` ausführen. 
-8. Browser öffnen und in die URL [http://localhost:8000/][bbs-home] aufrufen -> Es sollte eine Berlin-Karte zu sehen sein.
-9. Über [http://localhost:8000/admin/][bbs-admin] könnt ihr Euch einloggen. Dort seht ihr die Tabelle *Projects* -> Wenn ihr darauf klickt, kann man neue Bauvorhaben hinzufügen.
-
+1. Have Python 2.7.x installed.
+2. Clone [We build City][wbc-github] to a location of your choice.
+3. Clone this repository, [BuergerbautStadt][wbc-github], to a location of your choice.
+4. Copy `/path/to/bbs/bbs/default.local.py` to `/path/to/bbs/bbs/local.py`.
+5. Edit `/path/to/bbs/bbs/local.py` to match your setup. At least edit the database adapter settings. For testing purposes, use the sqlite3 adapter.
+6. Install the dependencies using pip `pip install -r /path/to/bbs/requirements.txt`. You might want to use a [virtualenv][virtualenv] for this.
+7. Change to the `bbs` directory and execute `python maname.py migrate`. Give an admin username and a password when asked.
+8. Start the development server using `python maname.py runserver`.
+10. Use `python maname.py load-fixtures` to load the administrative information about berlin in the database.
+11. Open a browser and go to [http://localhost:8000/][bbs-home]. A map of berlin should appear.
+12. Use [http://localhost:8000/admin/][bbs-admin] to log in. Under *region* and *process*, districts, departmentsplaces and publications can be added or edited.
 
 [bbs]: http://buergerbautstadt.de
-[django-install]: https://docs.djangoproject.com/en/1.4/intro/install/
+[bbs-github]: https://github.com/BuergerbautStadt/bbs
+[wbc-github]: https://github.com/webuildcity/wbc
+[django]: https://docs.djangoproject.com/en/1.8/
+[virtualenv]: https://virtualenv.pypa.io/en/latest/
 [bbs-home]: http://localhost:8000/
 [bbs-admin]: http://localhost:8000/admin/
