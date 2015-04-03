@@ -16,7 +16,7 @@ BuergerbautStadt
 9. Run `python manage.py createsuperuser` to create an admin account.
 10. Start the development server using `python manage.py runserver`.
 11. Open a browser and go to [http://localhost:8000/][bbs-home]. A map of berlin should appear.
-12. Use [http://localhost:8000/admin/][bbs-admin] to log in. Under *region* and *process*, districts, departmentsplaces and publications can be added or edited.
+12. Use [http://localhost:8000/admin/][bbs-admin] to log in. Under *region* and *process*, districts, departments, places and publications can be added or edited.
 
 [bbs]: http://buergerbautstadt.de
 [bbs-github]: https://github.com/BuergerbautStadt/bbs
