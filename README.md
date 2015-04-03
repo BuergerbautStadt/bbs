@@ -6,8 +6,8 @@ BuergerbautStadt
 ## Setup
 
 1. Have Python 2.7.x installed.
-2. Clone [We build City][wbc-github] to a location of your choice.
-3. Clone this repository, [BuergerbautStadt][wbc-github], to a location of your choice.
+2. Clone [https://github.com/webuildcity/wbc][wbc-github] to a location of your choice.
+3. Clone this repository, [https://github.com/webuildcity/wbc][bbs-github], to a location of your choice.
 4. Copy `/path/to/bbs/bbs/default.local.py` to `/path/to/bbs/bbs/local.py`.
 5. Edit `/path/to/bbs/bbs/local.py` to match your setup. At least edit the database adapter settings. For testing purposes, use the sqlite3 adapter.
 6. Install the dependencies using pip `pip install -r /path/to/bbs/requirements.txt`. You might want to use a [virtualenv][virtualenv] for this.
