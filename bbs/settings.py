@@ -85,7 +85,7 @@ FEED_DESCRIPTION = "Veröffentlichungen zu Bauvorhaben in Berlin"
 TILES_URL = 'http://tiles.codefor.de/bbs-berlin/'
 TILES_OPT = {
     'attribution': 'Map data &copy; 2012 OpenStreetMap contributors',
-    'maxZoom': 17,
+    'maxZoom': 18,
     'minZoom': 10,
     'zIndex': 0,
     'reuseTiles': 1
