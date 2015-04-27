@@ -96,3 +96,6 @@ DEFAULT_VIEW = {
     'lon': 13.37628,
     'zoom': 11
 }
+
+ENTITY_NAME = 'Bezirk'
+ENTITY_MODEL = 'District'
