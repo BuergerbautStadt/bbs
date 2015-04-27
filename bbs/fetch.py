@@ -28,6 +28,7 @@ class PlaceFetcher():
         # open geojson
         geojson = json.load(open('/tmp/re_bplan.json','r'))
 
+        n = 0
         for feature in geojson["features"]:
 
             # prepare values dictionary
@@ -72,20 +73,19 @@ class PlaceFetcher():
                 place_values['description'] = ''
 
             # see if is marked active
-            # if feature['properties']['FESTSG']:
-            #     if feature['properties']['FESTSG'].lower() == 'ja':
-            #         place_values['active'] = False
-            #     else:
-            #         place_values['active'] = True
-            # else:
-            #     place_values['active'] = False
-
-            place_values['active'] = False
+            if feature['properties']['FESTSG']:
+                if feature['properties']['FESTSG'].lower() == 'ja':
+                    place_values['active'] = False
+                else:
+                    place_values['active'] = True
+            else:
+                place_values['active'] = False
 
             # update the place or create a new one
             place,created = Place.objects.update_or_create(identifier=place_values['identifier'],defaults=place_values)
 
             if created:
+                n += 1
                 try:
                     district = District.objects.get(name=feature['properties']['BEZIRK'])
                     place.entities.add(district)
@@ -93,9 +93,7 @@ class PlaceFetcher():
                 except District.DoesNotExist:
                     pass
 
-            if place.address == '':
                 # get address from open street map
-                #url = "http://nominatim.openstreetmap.org/reverse?format=json&lat=%s&lon=%s&zoom=18&addressdetails=1" % (place.lat,place.lon)
                 url = "http://open.mapquestapi.com/nominatim/v1/reverse.php?format=json&lat=%s&lon=%s" % (place.lat,place.lon)
                 response = urllib2.urlopen(url).read()
                 data = json.loads(response)
@@ -104,6 +102,7 @@ class PlaceFetcher():
                 else:
                     place.address = ''
                 place.save()
+                print place, 'created'
                 time.sleep(1)
 
-            print place, 'created' if created else '', 'active' if place_values['active'] else ''
+        print n,'places created'

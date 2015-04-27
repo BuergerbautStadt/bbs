@@ -4,7 +4,7 @@ import os,sys,json
 try:
     fixtures = json.loads(open(sys.argv[1]).read())
 except (IndexError,IOError):
-    sys.exit('Usage: ./migrate-fixtures.py FIXTUREFILE')
+    sys.exit('Usage: ./migrate-process-fixtures.py FIXTUREFILE')
 
 new_fixtures = []
 for fixture in fixtures:
