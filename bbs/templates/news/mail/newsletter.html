@@ -13,8 +13,7 @@ zu Bauvorhaben in den von Dir angegebenen Bezirken gibt es neue Veröffentlichun
     {% if publication.place.description %}Gegend:             {{publication.place.description}}{% endif %}
     Bezirk:             {{publication.place.entities.all|join:", "}}
     Link zum Projekt:   {{place_link}}{{publication.place.pk}}
-    {% if publication.begin == publication.end  %}Zeitpunkt:          {{ publication.end }}{% else %}
-    Auslegungszeitraum: von {{ publication.begin}} bis {{ publication.end }}
+    {% if publication.begin == publication.end  %}Zeitpunkt:          {{ publication.end }}{% else %}Auslegungszeitraum: {{ publication.begin}} bis {{ publication.end }}
     {% endif %}
 {% endfor %}
 
