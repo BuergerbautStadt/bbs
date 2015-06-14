@@ -2,21 +2,26 @@ from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView,RedirectView
 from django.contrib import admin
 
-from wbc.process.views import PublicationFeed
+from wbc.process.views import PlaceCreate,PlaceUpdate,PlaceDelete,PublicationCreate,PublicationUpdate,PublicationDelete,PublicationFeed
 
 admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='core/map.html')),
     url(r'^begriffe/$', 'wbc.process.views.process'),
-    url(r'^liste/$', TemplateView.as_view(template_name='process/list.html')),
+    url(r'^liste/$', 'wbc.process.views.places', name='places'),
 
     # orte
     url(r'^orte/$', RedirectView.as_view(url='/liste/', permanent=True)),
-    url(r'^orte/(?P<pk>\d+)/$', 'wbc.process.views.place'),
+    url(r'^orte/neu/$', PlaceCreate.as_view(), name='place_create'),
+    url(r'^orte/(?P<pk>[0-9]+)/$', 'wbc.process.views.place', name='place'),
+    url(r'^orte/(?P<pk>[0-9]+)/bearbeiten/$', PlaceUpdate.as_view(), name='place_update'),
+    url(r'^orte/(?P<pk>[0-9]+)/entfernen/$', PlaceDelete.as_view(), name='place_delete'),
 
     # veroeffentlichungen neu
-    url(r'^veroeffentlichungen/neu/$', 'wbc.process.views.create_publication'),
+    url(r'^veroeffentlichungen/neu/$', PublicationCreate.as_view(), name='publication_create'),
+    url(r'^veroeffentlichungen/(?P<pk>[0-9]+)/bearbeiten/$', PublicationUpdate.as_view(), name='publication_update'),
+    url(r'^veroeffentlichungen/(?P<pk>[0-9]+)/entfernen/$', PublicationDelete.as_view(), name='publication_delete'),
 
     # feeds
     url(r'^feeds/$', 'wbc.core.views.feeds'),
