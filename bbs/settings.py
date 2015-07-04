@@ -22,7 +22,7 @@ INSTALLED_APPS = (
     'wbc.process',
     'wbc.news',
     'wbc.comments',
-    'wbc.buildings'
+    #'wbc.buildings'
 )
 
 MIDDLEWARE_CLASSES = (
