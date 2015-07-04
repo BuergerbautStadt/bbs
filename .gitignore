@@ -4,11 +4,8 @@ bbs/local.py
 *.pyc
 .DS_Store
 
-static/*
-!static/.gitkeep
-
-bbs/static/*
-!bbs/static/.gitkeep
+static_root
+media_root
 
 data/database
 env
