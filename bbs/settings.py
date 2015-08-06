@@ -21,7 +21,8 @@ INSTALLED_APPS = (
     'wbc.region',
     'wbc.process',
     'wbc.news',
-    'wbc.comments'
+    'wbc.comments',
+    #'wbc.buildings'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -38,7 +39,7 @@ MIDDLEWARE_CLASSES = (
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SITE_ROOT,'bbs/templates/')],
+        'DIRS': [os.path.join(SITE_ROOT,'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -56,6 +57,8 @@ ROOT_URLCONF = 'bbs.urls'
 WSGI_APPLICATION = 'bbs.wsgi.application'
 SITE_ID = 1
 
+INTERNAL_IPS = ('127.0.0.1',)
+
 LANGUAGE_CODE = 'de-de'
 TIME_ZONE = 'Europe/Berlin'
 USE_I18N = True
@@ -63,13 +66,13 @@ USE_L10N = True
 USE_TZ = True
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(SITE_ROOT,'media/')
+MEDIA_ROOT = os.path.join(SITE_ROOT,'media_root/')
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(SITE_ROOT,'static/')
+STATIC_ROOT = os.path.join(SITE_ROOT,'static_root/')
 
 STATICFILES_DIRS = (
-    os.path.join(SITE_ROOT,'bbs/static/'),
+    os.path.join(SITE_ROOT,'static/'),
 )
 
 STATICFILES_FINDERS = (
