@@ -2,14 +2,16 @@ from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView,RedirectView
 from django.contrib import admin
 
-from wbc.process.views import PlaceCreate,PlaceUpdate,PlaceDelete,PublicationCreate,PublicationUpdate,PublicationDelete,PublicationFeed
+from wbc.process.views import PlaceCreate,PlaceUpdate,PlaceDelete
+from wbc.process.views import PublicationCreate,PublicationUpdate,PublicationDelete
+from wbc.process.views import PublicationFeed
 
 admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='core/map.html')),
-    url(r'^begriffe/$', 'wbc.process.views.process'),
-    url(r'^liste/$', 'wbc.process.views.places', name='places'),
+    url(r'^begriffe/$', 'wbc.process.views.process', name='process'),
+    url(r'^liste/$', TemplateView.as_view(template_name='process/list.html')),
 
     # orte
     url(r'^orte/$', RedirectView.as_view(url='/liste/', permanent=True)),
@@ -41,8 +43,8 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     # user login
-    # url(r'^login/', 'wbc.core.views.login_user'),
-    # url(r'^logout/', 'wbc.core.views.logout_user'),
+    url(r'^login/', 'wbc.core.views.login_user'),
+    url(r'^logout/', 'wbc.core.views.logout_user'),
 
     # robots.txt and sitemap.xml
     (r'^robots\.txt$', TemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
