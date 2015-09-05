@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-from local import *
+from .local import *
 
 INSTALLED_APPS = (
     # django

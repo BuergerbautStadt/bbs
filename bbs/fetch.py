@@ -1,5 +1,8 @@
 # coding: utf-8
-import os,subprocess,json,urllib2,time,sys
+from __future__ import print_function
+
+import os, subprocess, json, time, sys
+from six.moves.urllib_request import urlopen
 
 from wbc.region.models import District
 from wbc.process.models import Place
@@ -95,14 +98,14 @@ class PlaceFetcher():
 
                 # get address from open street map
                 url = "http://open.mapquestapi.com/nominatim/v1/reverse.php?format=json&lat=%s&lon=%s" % (place.lat,place.lon)
-                response = urllib2.urlopen(url).read()
+                response = urlopen(url).read()
                 data = json.loads(response)
                 if 'road' in data['address']:
                     place.address = data['address']['road']
                 else:
                     place.address = ''
                 place.save()
-                print place, 'created'
+                print(place, 'created')
                 time.sleep(1)
 
-        print n,'places created'
+        print(n,'places created')
