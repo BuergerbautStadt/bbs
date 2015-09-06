@@ -9,6 +9,8 @@ media_root
 
 data/database
 env
+env3
 
 .coverage
 htmlcov
+cover
