@@ -16,6 +16,7 @@ INSTALLED_APPS = (
     'rest_framework_gis',
     'widget_tweaks',
     'markdown',
+    'django_nose',
     # we build city apps
     'wbc.core',
     'wbc.region',
@@ -81,6 +82,17 @@ STATICFILES_FINDERS = (
 )
 
 LOGIN_URL = '/login'
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=wbc.comments,wbc.core,wbc.news,wbc.process,wbc.region',
+    'wbc.comments',
+    'wbc.core',
+    'wbc.news',
+    'wbc.process',
+    'wbc.region'
+]
 
 FEED_TITLE = "Bürger baut Stadt (Veröffentlichungen)"
 FEED_DESCRIPTION = "Veröffentlichungen zu Bauvorhaben in Berlin"
