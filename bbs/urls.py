@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, url
 from django.views.generic import TemplateView,RedirectView
 from django.contrib import admin
 
@@ -9,7 +9,7 @@ from wbc.process.views import PublicationFeed
 
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='core/map.html')),
     url(r'^begriffe/$', 'wbc.process.views.process', name='process'),
     url(r'^liste/$', 'wbc.process.views.places', name='places'),
@@ -56,5 +56,5 @@ urlpatterns = patterns('',
     # robots.txt and sitemap.xml
     url(r'^robots\.txt$', TemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
     url(r'^sitemap\.xml$', TemplateView.as_view(template_name='sitemap.xml', content_type='text/plain')),
-)
+]
 
